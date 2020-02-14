@@ -6,6 +6,30 @@ public class Problem19 {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) return null;
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while (n > 0) {
+            fast = fast.next;
+            n--;
+        }
+        // 到达末尾 说明是删除第一个节点
+        if (fast == null) {
+            return head.next;
+        }
+        // 将n跑完后.. 剩余的其实就是从0开始的第几个节点 length - n
+        while (fast.next != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        // 移除
+        slow.next = slow.next.next;
+        return head;
+    }
+
+    /*
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        if (head == null) return null;
 
         int length = 0;
 
@@ -58,5 +82,5 @@ public class Problem19 {
             return (length + 1) / 2;
         }
     }
-
+    */
 }

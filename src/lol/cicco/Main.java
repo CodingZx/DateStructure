@@ -9,10 +9,10 @@ public class Main {
 
         Problem19 problem = new Problem19();
 
-        foreachList(problem.removeNthFromEnd(createList(5), 4));
-//        foreachList(problem.removeNthFromEnd(createList(7), 2));
-//        foreachList(problem.removeNthFromEnd(createList(6), 3));
-//        foreachList(problem.removeNthFromEnd(createList(4), 4));
+        foreachList(problem.removeNthFromEnd(createList(5), 2));
+        foreachList(problem.removeNthFromEnd(createList(7), 2));
+        foreachList(problem.removeNthFromEnd(createList(6), 3));
+        foreachList(problem.removeNthFromEnd(createList(4), 4));
     }
 
     private static ListNode createList(int length) {
