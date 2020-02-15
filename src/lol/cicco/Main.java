@@ -1,15 +1,16 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem415;
+import lol.cicco.leetcode.Problem43;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem415 problem = new Problem415();
+        Problem43 problem = new Problem43();
 
-        System.out.println(problem.addStrings("9", "99"));
+        System.out.println(problem.multiply("123456789", "987654321"));
+        System.out.println(problem.multiply("2", "3"));
     }
 
     private static ListNode createList(int length) {
