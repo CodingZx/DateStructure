@@ -1,18 +1,15 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem19;
+import lol.cicco.leetcode.Problem35;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem19 problem = new Problem19();
+        Problem35 problem = new Problem35();
 
-        foreachList(problem.removeNthFromEnd(createList(5), 2));
-        foreachList(problem.removeNthFromEnd(createList(7), 2));
-        foreachList(problem.removeNthFromEnd(createList(6), 3));
-        foreachList(problem.removeNthFromEnd(createList(4), 4));
+        System.out.println(problem.searchInsert(new int[]{1,3,5,6,9}, 8));
     }
 
     private static ListNode createList(int length) {
