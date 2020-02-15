@@ -1,6 +1,6 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem66;
+import lol.cicco.leetcode.Problem67;
 import lol.cicco.leetcode.struct.ListNode;
 
 import java.util.Arrays;
@@ -9,10 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem66 problem = new Problem66();
-        int[] arr1 = new int[]{9,9,9};
+        Problem67 problem = new Problem67();
 
-        System.out.println(Arrays.toString(problem.plusOne(arr1)));
+        System.out.println(problem.addBinary("11","1"));
     }
 
     private static ListNode createList(int length) {
