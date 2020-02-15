@@ -1,17 +1,15 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem67;
+import lol.cicco.leetcode.Problem415;
 import lol.cicco.leetcode.struct.ListNode;
-
-import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem67 problem = new Problem67();
+        Problem415 problem = new Problem415();
 
-        System.out.println(problem.addBinary("11","1"));
+        System.out.println(problem.addStrings("9", "99"));
     }
 
     private static ListNode createList(int length) {
