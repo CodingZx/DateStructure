@@ -1,15 +1,22 @@
 package lol.cicco;
 
 import lol.cicco.leetcode.Problem35;
+import lol.cicco.leetcode.Problem88;
 import lol.cicco.leetcode.struct.ListNode;
+
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem35 problem = new Problem35();
+        Problem88 problem = new Problem88();
+        int[] arr1 = new int[]{1,2,3,4,5,0,0,0};
+        int[] arr2 = new int[]{1,2,8};
 
-        System.out.println(problem.searchInsert(new int[]{1,3,5,6,9}, 8));
+        problem.merge(arr1, 5, arr2, 3);
+
+        System.out.println(Arrays.toString(arr1));
     }
 
     private static ListNode createList(int length) {
