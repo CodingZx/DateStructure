@@ -1,15 +1,15 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem448;
+import lol.cicco.leetcode.Problem41;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem448 problem = new Problem448();
+        Problem41 problem = new Problem41();
 
-        System.out.println(problem.findDisappearedNumbers(new int[]{4,3,2,7,8,2,3,1}));
+        System.out.println(problem.firstMissingPositive(new int[]{1,1}));
     }
 
     private static ListNode createList(int[] val) {
