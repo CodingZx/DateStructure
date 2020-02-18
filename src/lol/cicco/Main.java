@@ -1,16 +1,29 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem43;
+import lol.cicco.leetcode.Problem234;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem43 problem = new Problem43();
+        Problem234 problem = new Problem234();
 
-        System.out.println(problem.multiply("123456789", "987654321"));
-        System.out.println(problem.multiply("2", "3"));
+        System.out.println(problem.isPalindrome(createList(new int[]{1, 2})));
+        System.out.println(problem.isPalindrome(createList(new int[]{1})));
+        System.out.println(problem.isPalindrome(createList(new int[]{1, 2, 3, 4, 5, 4, 3, 2, 1})));
+        System.out.println(problem.isPalindrome(createList(new int[]{1, 2, 3, 4, 4, 3, 2, 1})));
+
+    }
+
+    private static ListNode createList(int[] val) {
+        ListNode pre = new ListNode(0);
+        ListNode node = pre;
+        for (int value : val) {
+            node.next = new ListNode(value);
+            node = node.next;
+        }
+        return pre.next;
     }
 
     private static ListNode createList(int length) {
