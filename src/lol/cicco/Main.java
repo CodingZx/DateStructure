@@ -1,5 +1,6 @@
 package lol.cicco;
 
+import lol.cicco.leetcode.Problem442;
 import lol.cicco.leetcode.Problem58;
 import lol.cicco.leetcode.struct.ListNode;
 
@@ -7,9 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem58 problem = new Problem58();
+        Problem442 problem = new Problem442();
 
-        System.out.println(problem.lengthOfLastWord(""));
+        System.out.println(problem.findDuplicates(new int[]{4,3,2,7,8,2,3,1}));
     }
 
     private static ListNode createList(int[] val) {
