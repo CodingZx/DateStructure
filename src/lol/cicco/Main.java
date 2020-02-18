@@ -1,18 +1,18 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem234;
+import lol.cicco.leetcode.Problem09;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem234 problem = new Problem234();
+        Problem09 problem = new Problem09();
 
-        System.out.println(problem.isPalindrome(createList(new int[]{1, 2})));
-        System.out.println(problem.isPalindrome(createList(new int[]{1})));
-        System.out.println(problem.isPalindrome(createList(new int[]{1, 2, 3, 4, 5, 4, 3, 2, 1})));
-        System.out.println(problem.isPalindrome(createList(new int[]{1, 2, 3, 4, 4, 3, 2, 1})));
+        System.out.println(problem.isPalindrome(Integer.MAX_VALUE));
+        System.out.println(problem.isPalindrome(10));
+        System.out.println(problem.isPalindrome(121));
+        System.out.println(problem.isPalindrome(11));
 
     }
 
