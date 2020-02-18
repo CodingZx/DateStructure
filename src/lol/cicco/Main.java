@@ -1,19 +1,15 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem09;
+import lol.cicco.leetcode.Problem680;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem09 problem = new Problem09();
+        Problem680 problem = new Problem680();
 
-        System.out.println(problem.isPalindrome(Integer.MAX_VALUE));
-        System.out.println(problem.isPalindrome(10));
-        System.out.println(problem.isPalindrome(121));
-        System.out.println(problem.isPalindrome(11));
-
+        System.out.println(problem.validPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"));
     }
 
     private static ListNode createList(int[] val) {
