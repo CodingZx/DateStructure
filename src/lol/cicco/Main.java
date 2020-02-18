@@ -1,15 +1,15 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem680;
+import lol.cicco.leetcode.Problem58;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem680 problem = new Problem680();
+        Problem58 problem = new Problem58();
 
-        System.out.println(problem.validPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"));
+        System.out.println(problem.lengthOfLastWord(""));
     }
 
     private static ListNode createList(int[] val) {
