@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class Problem102 {
-
+/*
     // 递归
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> levels = new ArrayList<>();
@@ -32,48 +32,37 @@ public class Problem102 {
             processData(node.right, level + 1, dataList);
         }
     }
+*/
 
-    /*
     // 非递归
     public List<List<Integer>> levelOrder(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return new LinkedList<>();
         }
         List<List<Integer>> res = new LinkedList<>();
-        TreeNode endNode = new TreeNode(0);
         // 辅助队列
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        queue.add(endNode);
 
-        List<Integer> values = new LinkedList<>();
-        while(!queue.isEmpty()){
-            TreeNode node = queue.poll();
-            if(node == endNode) {
-                // 相同对象  当前层次遍历完成
-                if(!values.isEmpty()) {
-                    res.add(values);
-                    values = new LinkedList<>();
+        while (!queue.isEmpty()) {
+            int nowLength = queue.size();
+
+            List<Integer> values = new LinkedList<>();
+            for (int i = 0; i < nowLength; i++) {
+                TreeNode node = queue.poll();
+                values.add(node.val);
+
+                if (node.left != null) {
+                    queue.add(node.left);
                 }
-                continue;
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
             }
-            values.add(node.val);
-
-            if(node.left != null) {
-                queue.add(node.left);
-            }
-            if(node.right != null) {
-                queue.add(node.right);
-            }
-
-            TreeNode nextNode = queue.peek();
-            if(nextNode  == endNode) {
-                // 当前层级已经遍历完成
-                queue.add(endNode);
-            }
+            res.add(values);
         }
 
         return res;
     }
-     */
+
 }
