@@ -1,15 +1,15 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem41;
+import lol.cicco.leetcode.Problem03;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem41 problem = new Problem41();
+        Problem03 problem = new Problem03();
 
-        System.out.println(problem.firstMissingPositive(new int[]{1,1}));
+        System.out.println(problem.lengthOfLongestSubstring("dvdf"));
     }
 
     private static ListNode createList(int[] val) {
