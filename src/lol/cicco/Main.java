@@ -1,15 +1,20 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem26;
+import lol.cicco.leetcode.Problem80;
 import lol.cicco.leetcode.struct.ListNode;
+
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem26 problem = new Problem26();
+        Problem80 problem = new Problem80();
 
-        System.out.println(problem.removeDuplicates(new int[]{1, 2,3,4,5,5,6}));
+        int[] arr = new int[]{1,1,2,2,3,3,3,4,4,4,4,5,5};
+        System.out.println(problem.removeDuplicates(arr));
+
+        System.out.println(Arrays.toString(arr));
     }
 
     private static ListNode createList(int[] val) {
