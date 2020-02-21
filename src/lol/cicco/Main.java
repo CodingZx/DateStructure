@@ -1,5 +1,6 @@
 package lol.cicco;
 
+import lol.cicco.leetcode.Problem61;
 import lol.cicco.leetcode.Problem80;
 import lol.cicco.leetcode.struct.ListNode;
 
@@ -9,12 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem80 problem = new Problem80();
+        Problem61 problem = new Problem61();
 
-        int[] arr = new int[]{1,1,2,2,3,3,3,4,4,4,4,5,5};
-        System.out.println(problem.removeDuplicates(arr));
+//        System.out.println(problem.rotateRight(createList(new int[]{1,2,3,4,5}), 2));
+        System.out.println(problem.rotateRight(createList(new int[]{1,2}), 2));
 
-        System.out.println(Arrays.toString(arr));
     }
 
     private static ListNode createList(int[] val) {
