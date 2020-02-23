@@ -1,16 +1,16 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem92;
+import lol.cicco.leetcode.Problem206;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem92 problem = new Problem92();
+        Problem206 problem = new Problem206();
 
 //        System.out.println(problem.rotateRight(createList(new int[]{1,2,3,4,5}), 2));
-        System.out.println(problem.reverseBetween(createList(new int[]{1,2,3,4,5}), 2, 4));
+        System.out.println(problem.reverseList(createList(new int[]{1,2,3,4,5})));
 
     }
 
