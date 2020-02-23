@@ -1,5 +1,6 @@
 package lol.cicco;
 
+import lol.cicco.leetcode.Problem144;
 import lol.cicco.leetcode.Problem206;
 import lol.cicco.leetcode.Problem220;
 import lol.cicco.leetcode.Problem94;
@@ -10,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem94 problem = new Problem94();
+        Problem144 problem = new Problem144();
 
         TreeNode node = new TreeNode(4);
         node.left = new TreeNode(2);
@@ -20,7 +21,7 @@ public class Main {
         node.right.left = new TreeNode(5);
         node.right.right = new TreeNode(7);
 
-        System.out.println(problem.inorderTraversal(node));
+        System.out.println(problem.preorderTraversal(node));
 
     }
 
