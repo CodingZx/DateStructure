@@ -1,16 +1,16 @@
 package lol.cicco;
 
 import lol.cicco.leetcode.Problem206;
+import lol.cicco.leetcode.Problem220;
 import lol.cicco.leetcode.struct.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem206 problem = new Problem206();
+        Problem220 problem = new Problem220();
 
-//        System.out.println(problem.rotateRight(createList(new int[]{1,2,3,4,5}), 2));
-        System.out.println(problem.reverseList(createList(new int[]{1,2,3,4,5})));
+        System.out.println(problem.containsNearbyAlmostDuplicate(new int[]{-1,-1}, 1,0));
 
     }
 
