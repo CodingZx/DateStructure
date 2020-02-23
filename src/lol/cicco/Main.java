@@ -2,15 +2,25 @@ package lol.cicco;
 
 import lol.cicco.leetcode.Problem206;
 import lol.cicco.leetcode.Problem220;
+import lol.cicco.leetcode.Problem94;
 import lol.cicco.leetcode.struct.ListNode;
+import lol.cicco.leetcode.struct.TreeNode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem220 problem = new Problem220();
+        Problem94 problem = new Problem94();
 
-        System.out.println(problem.containsNearbyAlmostDuplicate(new int[]{-1,-1}, 1,0));
+        TreeNode node = new TreeNode(4);
+        node.left = new TreeNode(2);
+        node.right = new TreeNode(6);
+        node.left.left = new TreeNode(1);
+        node.left.right = new TreeNode(3);
+        node.right.left = new TreeNode(5);
+        node.right.right = new TreeNode(7);
+
+        System.out.println(problem.inorderTraversal(node));
 
     }
 
