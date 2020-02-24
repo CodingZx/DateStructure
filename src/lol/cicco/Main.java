@@ -1,9 +1,6 @@
 package lol.cicco;
 
-import lol.cicco.leetcode.Problem144;
-import lol.cicco.leetcode.Problem206;
-import lol.cicco.leetcode.Problem220;
-import lol.cicco.leetcode.Problem94;
+import lol.cicco.leetcode.*;
 import lol.cicco.leetcode.struct.ListNode;
 import lol.cicco.leetcode.struct.TreeNode;
 
@@ -11,17 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem144 problem = new Problem144();
+        Problem5169 problem = new Problem5169();
 
-        TreeNode node = new TreeNode(4);
-        node.left = new TreeNode(2);
-        node.right = new TreeNode(6);
-        node.left.left = new TreeNode(1);
-        node.left.right = new TreeNode(3);
-        node.right.left = new TreeNode(5);
-        node.right.right = new TreeNode(7);
 
-        System.out.println(problem.preorderTraversal(node));
+        System.out.println(problem.daysBetweenDates("2019-06-29","2019-06-30"));
 
     }
 
