@@ -7,10 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem25 problem = new Problem25();
+        Problem203 problem = new Problem203();
 
 
-        System.out.println(problem.reverseKGroup(createList(new int[]{1,2,3,4,5}), 3));
+        System.out.println(problem.removeElements(createList(new int[]{1,1}), 1));
 
     }
 
