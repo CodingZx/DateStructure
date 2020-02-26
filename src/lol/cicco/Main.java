@@ -7,10 +7,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem203 problem = new Problem203();
+        Problem143 problem = new Problem143();
 
-
-        System.out.println(problem.removeElements(createList(new int[]{1,1}), 1));
+        ListNode node = createList(new int[]{1});
+        problem.reorderList(null);
+        System.out.println(node);
 
     }
 
