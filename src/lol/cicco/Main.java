@@ -2,32 +2,31 @@ package lol.cicco;
 
 import lol.cicco.leetcode.*;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Problem138 problem = new Problem138();
+        Problem725 problem = new Problem725();
 
-        Problem138.Node node7 = new Problem138.Node(7);
-        Problem138.Node node13 = new Problem138.Node(13);
-        Problem138.Node node11 = new Problem138.Node(11);
-        Problem138.Node node10 = new Problem138.Node(10);
-        Problem138.Node node1 = new Problem138.Node(1);
+        Problem725.ListNode node1 = new Problem725.ListNode(1);
+        Problem725.ListNode node2 = new Problem725.ListNode(2);
+        Problem725.ListNode node3 = new Problem725.ListNode(3);
+        Problem725.ListNode node4 = new Problem725.ListNode(4);
+        Problem725.ListNode node5 = new Problem725.ListNode(5);
+        Problem725.ListNode node6 = new Problem725.ListNode(6);
+        Problem725.ListNode node7 = new Problem725.ListNode(7);
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = node6;
+        node6.next = node7;
 
-        node7.next = node13;
-        node13.next = node11;
-        node11.next = node10;
-        node10.next = node1;
+        Problem725.ListNode[] arr = problem.splitListToParts(node1, 10);
+        System.out.println(Arrays.toString(arr));
 
-        node13.random = node7;
-        node11.random = node1;
-        node10.random = node11;
-        node1.random = node7;
-
-
-        Problem138.Node res = problem.copyRandomList(node7);
-
-        System.out.println(res);
     }
 
 }
