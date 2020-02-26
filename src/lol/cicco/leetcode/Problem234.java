@@ -1,6 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
 
 public class Problem234 {
     public boolean isPalindrome(ListNode head) {
@@ -30,5 +29,23 @@ public class Problem234 {
         }
 
         return true;
+    }
+
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }

@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.TreeNode;
-
 public class Problem104 {
     public int maxDepth(TreeNode root) {
         if(root == null) return 0;
@@ -17,4 +15,16 @@ public class Problem104 {
         // 找到最大树高 并返回当前树高
         return Math.max(left, right) + 1;
     }
+
+
+    static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int x) {
+            val = x;
+        }
+    }
+
 }

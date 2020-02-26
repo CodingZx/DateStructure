@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem24 {
     public ListNode swapPairs(ListNode head) {
         ListNode pre = new ListNode(0);
@@ -29,5 +27,22 @@ public class Problem24 {
         left.next = null;
         right.next = left;
         return right;
+    }
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }

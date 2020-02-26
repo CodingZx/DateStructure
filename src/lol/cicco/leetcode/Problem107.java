@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.TreeNode;
-
 import java.util.*;
 
 public class Problem107 {
@@ -30,4 +28,16 @@ public class Problem107 {
         Collections.reverse(res);
         return res;
     }
+
+
+    static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int x) {
+            val = x;
+        }
+    }
+
 }

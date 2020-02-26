@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem21 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // 链式归并
@@ -42,5 +40,23 @@ public class Problem21 {
             node = node.next;
         }
         return head;
+    }
+
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }

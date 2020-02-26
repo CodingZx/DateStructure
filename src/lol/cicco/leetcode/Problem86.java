@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem86 {
     public ListNode partition(ListNode head, int x) {
         if(head == null) return null;
@@ -30,5 +28,22 @@ public class Problem86 {
         left.next = rightHead.next;
 
         return leftHead.next;
+    }
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }

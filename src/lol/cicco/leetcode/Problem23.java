@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -84,4 +82,22 @@ public class Problem23 {
         return head;
     }
      */
+
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
+    }
 }

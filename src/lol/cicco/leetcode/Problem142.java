@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem142 {
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head;
@@ -20,5 +18,23 @@ public class Problem142 {
             }
         }
         return null;
+    }
+
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }

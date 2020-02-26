@@ -1,9 +1,22 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem148 {
+    static class ListNode {
+        public int val;
+        public ListNode next;
 
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
+    }
     public ListNode sortList(ListNode head) {
         ListNode pre = new ListNode(0);
         pre.next = head;

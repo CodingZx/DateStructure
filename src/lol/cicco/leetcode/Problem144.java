@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.TreeNode;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
@@ -27,4 +25,16 @@ public class Problem144 {
 
         return val;
     }
+
+
+    static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int x) {
+            val = x;
+        }
+    }
+
 }

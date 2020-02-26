@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem92 {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (head == null || m == n) {
@@ -40,5 +38,23 @@ public class Problem92 {
         left.next = reversePre.next;
 
         return pre.next;
+    }
+
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }

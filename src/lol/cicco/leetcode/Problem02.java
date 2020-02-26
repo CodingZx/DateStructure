@@ -1,8 +1,23 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
 
 public class Problem02 {
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
+    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if(l1 == null) return l2;

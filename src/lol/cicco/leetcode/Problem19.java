@@ -1,8 +1,24 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
 
 public class Problem19 {
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
+    }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) return null;

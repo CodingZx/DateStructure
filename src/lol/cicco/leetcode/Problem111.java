@@ -1,10 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.TreeNode;
-
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class Problem111 {
 
     public int minDepth(TreeNode root) {
@@ -64,5 +59,15 @@ public class Problem111 {
         return 0;
     }
     */
+
+    static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int x) {
+            val = x;
+        }
+    }
 
 }

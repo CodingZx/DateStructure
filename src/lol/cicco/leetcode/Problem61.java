@@ -1,7 +1,5 @@
 package lol.cicco.leetcode;
 
-import lol.cicco.leetcode.struct.ListNode;
-
 public class Problem61 {
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null || head.next == null || k == 0) return head;
@@ -44,5 +42,23 @@ public class Problem61 {
         next.next = root;
 
         return left;
+    }
+
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
     }
 }
