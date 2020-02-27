@@ -8,24 +8,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Problem725 problem = new Problem725();
+        Problem445 problem = new Problem445();
 
-        Problem725.ListNode node1 = new Problem725.ListNode(1);
-        Problem725.ListNode node2 = new Problem725.ListNode(2);
-        Problem725.ListNode node3 = new Problem725.ListNode(3);
-        Problem725.ListNode node4 = new Problem725.ListNode(4);
-        Problem725.ListNode node5 = new Problem725.ListNode(5);
-        Problem725.ListNode node6 = new Problem725.ListNode(6);
-        Problem725.ListNode node7 = new Problem725.ListNode(7);
+        Problem445.ListNode node1 = new Problem445.ListNode(9);
+        Problem445.ListNode node2 = new Problem445.ListNode(1);
+        Problem445.ListNode node3 = new Problem445.ListNode(6);
+        Problem445.ListNode node4 = new Problem445.ListNode(0);
         node1.next = node2;
         node2.next = node3;
-        node3.next = node4;
-        node4.next = node5;
-        node5.next = node6;
-        node6.next = node7;
 
-        Problem725.ListNode[] arr = problem.splitListToParts(node1, 10);
-        System.out.println(Arrays.toString(arr));
+        problem.addTwoNumbers(node1, node4);
 
     }
 
