@@ -7,9 +7,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Problem191 problem = new Problem191();
+        Problem693 problem = new Problem693();
 
-        problem.hammingWeight(11);
+        System.out.println(problem.hasAlternatingBits(3));
     }
 
 }
