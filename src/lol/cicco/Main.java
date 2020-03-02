@@ -7,9 +7,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Problem373 problem = new Problem373();
+        Problem202 problem = new Problem202();
 
-        System.out.println(problem.kSmallestPairs(new int[]{1,1,2}, new int[]{1,2,3}, 40));
+        System.out.println(problem.isHappy(19));
 
     }
 
