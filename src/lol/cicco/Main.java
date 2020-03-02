@@ -7,9 +7,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Problem202 problem = new Problem202();
+        Problem263 problem = new Problem263();
 
-        System.out.println(problem.isHappy(19));
+        System.out.println(problem.isUgly(12));
 
     }
 
