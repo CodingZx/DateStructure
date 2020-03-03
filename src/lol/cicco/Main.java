@@ -7,11 +7,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Problem179 problem = new Problem179();
+        Problem709 problem = new Problem709();
 
-        int[] arr = new int[]{0,0};
-
-        System.out.println(problem.largestNumber(arr));
+        System.out.println(problem.toLowerCase("AbcdDDDD"));
 
     }
 
