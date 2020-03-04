@@ -8,9 +8,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Question17_19 problem = new Question17_19();
+        Problem966 problem = new Problem966();
 
-        System.out.println(Arrays.toString(problem.missingTwo(new int[]{1,2,5,6})));
+        //["Yellow"]
+        //["yellow"]
+        //
+        System.out.println(Arrays.toString(problem.spellchecker(new String[]{"Yellow"}, new String[]{"yellow"})));
 
     }
 
